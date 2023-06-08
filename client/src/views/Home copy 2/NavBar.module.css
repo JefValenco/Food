@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-small;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.btnPrimary {
+  border: none;
+  background-color: #ffffff;
+  color: #646464;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 17px;
+  line-height: 50px;
+  text-align: end;
+  text-decoration: none;
+  user-select: none;
+
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btnPrimary:hover {
+  background-color: #646464;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.btnPrimary:active {
+  border: none;
+}
+
+.btnPrimary2 {
+  border: none;
+  background-color: #435718;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 17px;
+  line-height: 50px;
+  text-align: end;
+  text-decoration: none;
+  user-select: none;
+
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 0;
+  width: 100%;
+}
+.links2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  padding: 0;
+  width: 100%;
+}
+
+.links3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 0;
+  width: 100%;
+}
+
+.slideDown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.slideDown a,
+.slideDown button {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.slideDown a:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.slideDown a:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.slideDown a:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.slideDown a:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.slideDown a:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
+.slideDown button,
+.slideDown a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navMobile {
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 0.3em;
+  border: none;
+}
+
+.navMobile a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.divider {
+  width: 200px;
+  height: 2px;
+  background-color: #bed983;
+  border-radius: 1px;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+@media (max-width: 750px) {
+  .container {
+    background-color: #435718;
+  }
+}

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+.container2 {
+  display: inline-block;
+
+  justify-content: center;
+
+  width: 250px;
+  height: 400px;
+  padding: 10px;
+  align-content: center;
+  flex-wrap: wrap;
+
+  transition: all 0.3s ease-out;
+}
+
+.card {
+  background-color: #ffffff;
+
+  display: inline-block;
+
+  justify-content: center;
+  border-radius: 8px;
+  width: 250px;
+  height: "auto";
+  padding: 10px;
+  margin-left: -10px;
+  align-content: center;
+  flex-wrap: wrap;
+
+  transition: all 0.3s ease-out;
+  box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+}
+
+.card:hover h2 {
+  color: #435718;
+}
+
+.h2 {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  color: #898989;
+  font-size: 18px;
+
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.container2:hover .h2 {
+  color: #8bb458;
+
+  transition: all 0.3s ease-out;
+}
+
+.container2:hover .card {
+  transform: scale(1.02);
+  box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+}
+
+.p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  display: block;
+  color: rgb(67, 67, 67);
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #ededed;
+  margin: 10px 0;
+}
+
+.img {
+  border-radius: 8px;
+}
